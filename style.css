@@ -167,8 +167,39 @@ p{
 
 
 @media only screen and (max-width: 768px) {
+   h1 {
+    font-size: 3rem;
+   }
     .emoji_item{
         flex: 0 0 calc(33.33% - 2rem);
         max-width: calc(33.33% - 2rem);
     }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .clear_icon {
+        display: none;
+    }
+    #search_field {
+        width: 80%;
+        margin-right: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    #search_field {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    #search_field {
+        width: calc(100% - 60px);
+    }
+
 }
